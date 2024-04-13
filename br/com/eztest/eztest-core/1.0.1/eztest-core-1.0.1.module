@@ -1,0 +1,137 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "br.com.eztest",
+    "module": "eztest-core",
+    "version": "1.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "eztest-core-1.0.1.jar",
+          "url": "eztest-core-1.0.1.jar",
+          "size": 141847,
+          "sha512": "024fbf9018d04e4679da08319eb9a6a7c2b3a233181aacc116015af0a05dd831a0854f7ba4c7d9f297b9c2d745fcdb96999f232bbfbf8191b327038dcd0bdb72",
+          "sha256": "d3ddb840db22f34318fcee600a39b658d9bcd7add4e6ab66bd43b3083b1e59a7",
+          "sha1": "f9d9787a8203feb7a5c2781d9dc4b04d0e81abe8",
+          "md5": "c62b87dd2c235ebbe3e98956d6c578c8"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.apache.groovy",
+          "module": "groovy",
+          "version": {
+            "requires": "4.0.14"
+          }
+        },
+        {
+          "group": "org.hibernate",
+          "module": "hibernate-core",
+          "version": {
+            "requires": "5.6.15.Final"
+          }
+        },
+        {
+          "group": "org.postgresql",
+          "module": "postgresql",
+          "version": {
+            "requires": "42.7.3"
+          }
+        },
+        {
+          "group": "org.spockframework",
+          "module": "spock-core",
+          "version": {
+            "requires": "2.3-groovy-4.0"
+          }
+        },
+        {
+          "group": "commons-lang",
+          "module": "commons-lang",
+          "version": {
+            "requires": "2.6"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "eztest-core-1.0.1.jar",
+          "url": "eztest-core-1.0.1.jar",
+          "size": 141847,
+          "sha512": "024fbf9018d04e4679da08319eb9a6a7c2b3a233181aacc116015af0a05dd831a0854f7ba4c7d9f297b9c2d745fcdb96999f232bbfbf8191b327038dcd0bdb72",
+          "sha256": "d3ddb840db22f34318fcee600a39b658d9bcd7add4e6ab66bd43b3083b1e59a7",
+          "sha1": "f9d9787a8203feb7a5c2781d9dc4b04d0e81abe8",
+          "md5": "c62b87dd2c235ebbe3e98956d6c578c8"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "eztest-core-1.0.1-javadoc.jar",
+          "url": "eztest-core-1.0.1-javadoc.jar",
+          "size": 261,
+          "sha512": "3ffbaf2881c60179ae542f4b53e9bcea281ae0fa36319f0e7ec624dc25bd9067e8fe78eb3069ae434556b8f832422ecfb98cddd5c1811105246bee55e25d3b50",
+          "sha256": "8f78995d0abf638bd3a18e583e9cdc6054b505f955d3271137a8da08d9e39651",
+          "sha1": "26de35cb766b3ae8ac85c291b176c9343af3a6a6",
+          "md5": "9b7a73c9a4760ef08e7bdfbdfaee209c"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "eztest-core-1.0.1-sources.jar",
+          "url": "eztest-core-1.0.1-sources.jar",
+          "size": 36930,
+          "sha512": "d823dcf994bb91396a73c287ef9e81cece621c7444311aa7ce3da52f64bb1edd38c2ab6c2f5778f74f7cb8ac9b5b40519082b3732aa2c5d1fb2f37f142aefaf5",
+          "sha256": "bf06b3bd063ec72487ee02437189a316083a5cff2975bc887ffcc520e04a3f40",
+          "sha1": "0006ea01adf6b0c6242f116352b7b926eaf47f4d",
+          "md5": "72aed3741e7773dad7ffb4f638a13fb0"
+        }
+      ]
+    }
+  ]
+}
