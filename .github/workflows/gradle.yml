@@ -3,10 +3,12 @@ name: Build and Publish Java Package
 on:
   push:
     branches:
+      - release  # Set this to your default branch
       - master  # Set this to your default branch
   pull_request:
     branches:
       - master
+      - release
 
 jobs:
   build:
@@ -41,7 +43,7 @@ jobs:
           distribution: 'adopt'
           server-id: github  # Value of the server-id in the ~/.m2/settings.xml
           server-username: USERNAME_GITHUB  # Environment variable for GitHub username
-          server-password: TOKEN_GITHUB  # Environment variable for GitHub token
+          server-password: TOKEN_GITHUB  # Environment variable for GireleasetHub token
 
       - name: Publish to GitHub Packages
         run: ./gradlew publish
