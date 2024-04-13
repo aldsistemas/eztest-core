@@ -49,6 +49,8 @@ def generateVersion() {
             suffix = '.' + System.env['BITBUCKET_BUILD_NUMBER']
         } else if (System.env['ARTIFACT_BUILD_NUMBER']) {
             suffix = '.' + System.env['ARTIFACT_BUILD_NUMBER']
+        } else if (System.env['github.run_number']) {
+            suffix = '.' + System.env['github.run_number']
         } else if (System.env['BUILD_NUMBER']) {
             suffix = '.' + System.env['BUILD_NUMBER']
         }
@@ -69,23 +71,21 @@ def writeFile(file, content) {
     file.createNewFile()
     file.withOutputStream { it << content }
 }
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
 
-//publishing {
-//    publications {
-//        mavenJava(MavenPublication) {
-//            groupId project.group
-//            artifactId project.name
-//            version project.version
-//            from components.java
-//        }
-//    }
-//    repositories {
-//        maven {
-//            url "https://mitfokus-maven-374617860519.d.codeartifact.us-east-1.amazonaws.com/maven/mitfokus-maven/"
-//            credentials {
-//                username "aws"
-//                password repoPassword
-//            }
-//        }
-//    }
-//}
+    repositories {
+        maven {
+            name = 'GitHubPackages'
+            url = uri("https://github.com/aldsistemas/eztest-core")
+            credentials {
+                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME_GITHUB")
+                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN_GITHUB")
+            }
+        }
+    }
+}
