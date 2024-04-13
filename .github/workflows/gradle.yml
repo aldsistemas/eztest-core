@@ -3,12 +3,10 @@ name: Build and Publish Java Package
 on:
   push:
     branches:
-      - release  # Set this to your default branch
       - master  # Set this to your default branch
   pull_request:
     branches:
       - master
-      - release
 
 jobs:
   build:
@@ -30,23 +28,46 @@ jobs:
         run: ./gradlew build
 
   publish:
-    needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/release'  # Ensure this runs only on push to master
-    steps:
-      - uses: actions/checkout@v2
 
-      - name: Set up JDK 1.8
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 11
         uses: actions/setup-java@v2
         with:
           java-version: '8.0'
           distribution: 'adopt'
-          server-id: github  # Value of the server-id in the ~/.m2/settings.xml
-          server-username: USERNAME_GITHUB  # Environment variable for GitHub username
-          server-password: TOKEN_GITHUB  # Environment variable for GireleasetHub token
 
-      - name: Publish to GitHub Packages
-        run: ./gradlew publish
+      - name: Set Java tool options
+        run: echo "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8" >> $GITHUB_ENV
+
+      - name: Build with Gradle
+        run: ./gradlew -i build
+
+      - name: Read Version File
+        id: version
+        run: echo "::set-output name=VERSION::$(cat VERSION)"
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "github@aldsistemas.com.br"
+          git config --global user.name "GitHub"
+
+      - name: Clone releases branch
         env:
-          USERNAME_GITHUB: ${{ secrets.USERNAME_GITHUB }}
-          TOKEN_GITHUB: ${{ secrets.TOKEN_GITHUB }}
+          REPO_USERNAME: ${{ secrets.REPO_USERNAME }}
+          REPO_PASSWORD: ${{ secrets.REPO_PASSWORD }}
+        run: |
+          git checkout releases
+
+      - name: Publish to Gradle
+        run: ./gradlew -i publish
+
+      - name: Commit and push release
+        run: |
+          cd build/repos/releases
+          git add *
+          git commit -m "[release] Commit release ${{ steps.version.outputs.VERSION }}"
+          git push origin releases
