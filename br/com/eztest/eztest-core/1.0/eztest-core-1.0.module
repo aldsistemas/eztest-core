@@ -27,11 +27,11 @@
         {
           "name": "eztest-core-1.0.jar",
           "url": "eztest-core-1.0.jar",
-          "size": 148117,
-          "sha512": "8d015cab483261aea49a02e896a1800b82c32499b4e12b32ca8e8189fcc23280df566ee1cd5dfb1a1f330c6832f81e2a23ab8a74090465331941c67b01f17e5f",
-          "sha256": "183adc967010cbb1759ef49f56a5f566449ad0ce6f1ef8d7b6987b46be10c4cc",
-          "sha1": "cfc298dbad725b6f79ac9185de2842275efd6fcc",
-          "md5": "84c69f0826178272f6f3c3a7879165df"
+          "size": 141847,
+          "sha512": "7151bd90414fd5e4f9ecb840d7490844bff0974edfcd61a47f1a39cf84deed637bf5ecfd8dfd0bc94113d10f3305cb45534b19740734ea966430dd97808946ca",
+          "sha256": "865b3bdb12148e41637f9bf7c1e77ab3c2a555314bdee722f8ca4603bf17794f",
+          "sha1": "7e3b12e43792fac40b7be28f6a623e7fc00e6866",
+          "md5": "46672fbaab279fcbe6c26025985d7b68"
         }
       ]
     },
@@ -85,11 +85,11 @@
         {
           "name": "eztest-core-1.0.jar",
           "url": "eztest-core-1.0.jar",
-          "size": 148117,
-          "sha512": "8d015cab483261aea49a02e896a1800b82c32499b4e12b32ca8e8189fcc23280df566ee1cd5dfb1a1f330c6832f81e2a23ab8a74090465331941c67b01f17e5f",
-          "sha256": "183adc967010cbb1759ef49f56a5f566449ad0ce6f1ef8d7b6987b46be10c4cc",
-          "sha1": "cfc298dbad725b6f79ac9185de2842275efd6fcc",
-          "md5": "84c69f0826178272f6f3c3a7879165df"
+          "size": 141847,
+          "sha512": "7151bd90414fd5e4f9ecb840d7490844bff0974edfcd61a47f1a39cf84deed637bf5ecfd8dfd0bc94113d10f3305cb45534b19740734ea966430dd97808946ca",
+          "sha256": "865b3bdb12148e41637f9bf7c1e77ab3c2a555314bdee722f8ca4603bf17794f",
+          "sha1": "7e3b12e43792fac40b7be28f6a623e7fc00e6866",
+          "md5": "46672fbaab279fcbe6c26025985d7b68"
         }
       ]
     },
@@ -106,10 +106,10 @@
           "name": "eztest-core-1.0-javadoc.jar",
           "url": "eztest-core-1.0-javadoc.jar",
           "size": 261,
-          "sha512": "6caa28b12c9ee0190a882890e794024078b13ac6d2796ee2ec3524f3ca09a7eba7465bab20995ef8bdcbb82e1fa6199675b7e90dbb5c4c469d202cbee617e39f",
-          "sha256": "2a1df4bc0aa2b8e4c39849de0a696b0ef09dae8a8549727faf7b15646fe3fac8",
-          "sha1": "0ee105fd75e15847434bd870a89986eae392a56e",
-          "md5": "972742ac79ca02fba23aa36dd90ca6bf"
+          "sha512": "0e31a0cae571cfd555689cd07bc37bb188ff22e9a11d4b957a20cf22fe537874fd402dda6fa3515c755e55113118e88ee10354b5c1b35a319747590ba0336f81",
+          "sha256": "f937a666c3e9ea9adf8b0b20c4a9e5915589a6a0d129e89bf209a8e71b5a43a4",
+          "sha1": "b5407598167312fd20d7e14b65dc2c83bcdb9e1a",
+          "md5": "14031373929654a3206e260ea07f2078"
         }
       ]
     },
@@ -125,11 +125,11 @@
         {
           "name": "eztest-core-1.0-sources.jar",
           "url": "eztest-core-1.0-sources.jar",
-          "size": 39330,
-          "sha512": "7520a7bf64ed94991d2b3efb041f3e568941dc88f71ea793365c347dbe6ba46c1be1a7745082c4df1ed1ebab1a974468e3432c9901afad2681b4b41c2ca16294",
-          "sha256": "49da171ef18c9d1a36c4ccc924a8b962633504b0db4167ef7778fff6e9a3abca",
-          "sha1": "a3b7e517baaecaf98ec5f9fd2cdaa89655dc7c3f",
-          "md5": "f408f28ce47ea7fb313b74771f1b914f"
+          "size": 36930,
+          "sha512": "ec0356c606afd84a5b0ba6fdc137c14b37df284150eca7d2d52f6c3d7eef28fbe756a94c4a43fa8e8c79b0c4d1a95b01031a9b1026eae5dc888c88c0d23e6525",
+          "sha256": "27c5bc147b57d29b380b38d9f61e875f102453946b821dd7f52c3b3dba8b347b",
+          "sha1": "7c14b90d4c906b31fb2fc08c5899962ec9f1227a",
+          "md5": "071ff4a1985ae0564910a14132048305"
         }
       ]
     }
