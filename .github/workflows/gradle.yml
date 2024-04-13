@@ -60,7 +60,7 @@ jobs:
           REPO_USERNAME: ${{ secrets.REPO_USERNAME }}
           REPO_PASSWORD: ${{ secrets.REPO_PASSWORD }}
         run: |
-          git checkout releases
+          git checkout -b releases
 
       - name: Publish to Gradle
         run: ./gradlew -i publish
