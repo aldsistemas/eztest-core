@@ -30,7 +30,7 @@ jobs:
   publish:
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'  # Ensure this runs only on push to master
+    if: github.ref == 'refs/heads/release'  # Ensure this runs only on push to master
     steps:
       - uses: actions/checkout@v2
 
